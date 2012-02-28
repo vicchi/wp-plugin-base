@@ -9,8 +9,8 @@
  * Acknowledgements: Based on WPS_Plugin_Base_v1 by Travis Smith (http://wpsmith.net)
  */
 
-if (!class_exists ('WPPluginBase')) {
-	class WPPluginBase {
+if (!class_exists ('WP_PluginBase')) {
+	class WP_PluginBase {
 		function hook ($hook) {
 			$priority = 10;
 			$method = $this->sanitise_method ($hook);
@@ -27,10 +27,10 @@ if (!class_exists ('WPPluginBase')) {
 			return add_action ($hook, array ($this, $method), $priority, 999);
 		}
 		
-		private function sanitise_method($method) {
+		private function sanitise_method ($method) {
 			return str_replace (array ('.', '-'), array ('_DOT_', '_DASH'), $method);
 		}
-	}	// end-class WPPluginBase
+	}	// end-class WP_PluginBase
 }
 
 ?>
