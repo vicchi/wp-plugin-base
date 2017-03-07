@@ -1,0 +1,11 @@
+{
+    "name": "vicchi/wp-plugin-base",
+    "description": "Base class for developing WordPress plugins; contains helper functions to add WordPress hooks consistently and sanitise hook method names",
+    "type": "library",
+    "license": "GPLv2",
+    "authors": [{
+        "name": "Gary Gale",
+        "email": "gary@vicchi.org"
+    }],
+    "require": {}
+}

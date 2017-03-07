@@ -1,0 +1,17 @@
+{
+    "name": "wp-plugin-base",
+    "authors": [
+        "Gary Gale <gary@vicchi.org>"
+    ],
+    "description": "Base class for developing WordPress plugins; contains helper functions to add WordPress hooks consistently and sanitise hook method names",
+    "main": "wp-plugin-base.php",
+    "keywords": [
+        "wordpress",
+        "plugin",
+        "development",
+        "base"
+    ],
+    "license": "GPLv2",
+    "homepage": "https://github.com/vicchi/wp-plugin-base",
+    "private": true
+}
