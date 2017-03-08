@@ -1,8 +1,8 @@
 <?php
 
 /*
- * Name: wp-plugin-base
- * Description: Base class for developing WordPress plugins; contains helper functions to add WordPress hooks consistently and sanitise hook method names.
+ * Name: WPPluginBase
+ * Description: Abstract base class for developing WordPress plugins; contains helper functions to add WordPress hooks consistently and sanitise hook method names.
  * Version: 2.0.0
  * Author: Gary Gale, Travis Smith
  * Author URI: http://www.garygale.com
@@ -11,10 +11,10 @@
  * Acknowledgements: Based on WPS_Plugin_Base_v1 by Travis Smith (http://wpsmith.net)
  */
 
-namespace vicchi;
+namespace Vicchi;
 
-if (!class_exists ('WP_PluginBase')) {
-	abstract class WP_PluginBase {
+if (!class_exists ('WPPluginBase')) {
+	abstract class WPPluginBase {
 		protected static $instance;
 
 		protected function hook($hook) {
