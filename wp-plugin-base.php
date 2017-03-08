@@ -13,6 +13,7 @@
 
 if (!class_exists ('WP_PluginBase')) {
 	abstract class WP_PluginBase {
+		protected static $instance;
 		protected function hook($hook) {
 			$priority = 10;
 			$method = $this->sanitise_method($hook);
@@ -33,7 +34,7 @@ if (!class_exists ('WP_PluginBase')) {
 			return str_replace (['.', '-'], ['_DOT_', '_DASH'], $method);
 		}
 
-		abstract public function get_instance();
+		abstract public static function get_instance();
 	}	// end-class WP_PluginBase
 }
 
