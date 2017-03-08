@@ -11,9 +11,12 @@
  * Acknowledgements: Based on WPS_Plugin_Base_v1 by Travis Smith (http://wpsmith.net)
  */
 
+namespace vicchi;
+
 if (!class_exists ('WP_PluginBase')) {
 	abstract class WP_PluginBase {
 		protected static $instance;
+
 		protected function hook($hook) {
 			$priority = 10;
 			$method = $this->sanitise_method($hook);

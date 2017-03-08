@@ -7,5 +7,10 @@
         "name": "Gary Gale",
         "email": "gary@vicchi.org"
     }],
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "vicchi\\": "/"
+        }
+    }
 }
