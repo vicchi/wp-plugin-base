@@ -4,7 +4,7 @@
         "Gary Gale <gary@vicchi.org>"
     ],
     "description": "Base class for developing WordPress plugins; contains helper functions to add WordPress hooks consistently and sanitise hook method names",
-    "main": "WPPluginBase.php",
+    "main": "PluginBase.php",
     "keywords": [
         "wordpress",
         "plugin",
