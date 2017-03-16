@@ -2,7 +2,7 @@
 /*
  * Name: PluginBase
  * Description: Abstract base class for developing WordPress plugins; contains helper functions to add WordPress hooks consistently and sanitise hook method names.
- * Version: 2.0.0
+ * Version: 2.0.1
  * Author: Gary Gale, Travis Smith
  * Author URI: http://www.garygale.com
  * License: GPL2
@@ -10,7 +10,7 @@
  * Acknowledgements: Based on WPS_Plugin_Base_v1 by Travis Smith (http://wpsmith.net)
  */
 
-if (!class_exists(PluginBase)) {
+if (!class_exists('PluginBase')) {
     abstract class PluginBase {
         protected static $plugin_name;
 
